@@ -17,6 +17,7 @@
 		D22C024D2741534F004CE67E /* NAM5_LTC_1h_1year.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D22C024C2741534F004CE67E /* NAM5_LTC_1h_1year.mlmodel */; };
 		D22C024F27415D9B004CE67E /* NAM6_LTC_1h_1year.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D22C024E27415D9B004CE67E /* NAM6_LTC_1h_1year.mlmodel */; };
 		D22C0251274160DC004CE67E /* NAM7_LTC_1h_1year.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D22C0250274160DC004CE67E /* NAM7_LTC_1h_1year.mlmodel */; };
+		D22C02552742CEF7004CE67E /* NAM9.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D22C02542742CEF7004CE67E /* NAM9.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D22C024C2741534F004CE67E /* NAM5_LTC_1h_1year.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NAM5_LTC_1h_1year.mlmodel; sourceTree = "<group>"; };
 		D22C024E27415D9B004CE67E /* NAM6_LTC_1h_1year.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NAM6_LTC_1h_1year.mlmodel; sourceTree = "<group>"; };
 		D22C0250274160DC004CE67E /* NAM7_LTC_1h_1year.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NAM7_LTC_1h_1year.mlmodel; sourceTree = "<group>"; };
+		D22C02542742CEF7004CE67E /* NAM9.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NAM9.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				D22C024C2741534F004CE67E /* NAM5_LTC_1h_1year.mlmodel */,
 				D22C024E27415D9B004CE67E /* NAM6_LTC_1h_1year.mlmodel */,
 				D22C0250274160DC004CE67E /* NAM7_LTC_1h_1year.mlmodel */,
+				D22C02542742CEF7004CE67E /* NAM9.mlmodel */,
 				D22C02272741533A004CE67E /* Main.storyboard */,
 				D22C022A2741533A004CE67E /* FilterApp.entitlements */,
 			);
@@ -265,6 +268,7 @@
 				D22C022427415339004CE67E /* ViewController.swift in Sources */,
 				D22C024F27415D9B004CE67E /* NAM6_LTC_1h_1year.mlmodel in Sources */,
 				D22C022227415339004CE67E /* AppDelegate.swift in Sources */,
+				D22C02552742CEF7004CE67E /* NAM9.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
