@@ -27,15 +27,15 @@ class ViewController: NSViewController {
         
         debugPrint("begin...")
         
-        let path = "/Users/xuanyuan/Downloads/AI_4"
+        let path = "/Users/shenfu/Desktop/AI"
         let def = FileManager.default
         
         for pa in def.subpaths(atPath: path) ?? [] {
             let full = path + "/" + pa
             if full.contains(".png") {
-                let mmm = NAM7_LTC_1h_1year()
+                let mmm = NAM14()
                 let url = URL(fileURLWithPath: full)
-                let result =  try? mmm.prediction(input: NAM7_LTC_1h_1yearInput(imageAt: url))
+                let result =  try? mmm.prediction(input: NAM14Input(imageAt: url))
                 let res = result?.classLabel ?? ""
                 if !full.contains(res) {
                     debugPrint("full=\(full),res=\(res)")
@@ -45,6 +45,7 @@ class ViewController: NSViewController {
             }
         }
         
+        debugPrint("done!")
     }
     
 
