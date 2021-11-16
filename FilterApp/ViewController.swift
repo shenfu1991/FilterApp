@@ -32,9 +32,9 @@ class ViewController: NSViewController {
         for pa in def.subpaths(atPath: path) ?? [] {
             let full = path + "/" + pa
             if full.contains(".png") {
-                let mmm = NAM14()
+                let mmm = NAM15()
                 let url = URL(fileURLWithPath: full)
-                let result =  try? mmm.prediction(input: NAM14Input(imageAt: url))
+                let result =  try? mmm.prediction(input: NAM15Input(imageAt: url))
 
                 let res = result?.classLabel ?? ""
                 if !full.contains(res) {
