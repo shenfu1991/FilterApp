@@ -24,18 +24,18 @@ class ViewController: NSViewController {
     
     
     @IBAction func goAction(_ sender: Any) {
-        
         debugPrint("begin...")
-        
-        let path = "/Users/shenfu/Desktop/AI"
+        let m = NSHomeDirectory().split(separator: "/")[1]
+//        let path = "/Users/\(m)/Downloads/AI_4"
+        let path = "/Users/\(m)/Desktop/AI"
         let def = FileManager.default
-        
         for pa in def.subpaths(atPath: path) ?? [] {
             let full = path + "/" + pa
             if full.contains(".png") {
                 let mmm = NAM14()
                 let url = URL(fileURLWithPath: full)
                 let result =  try? mmm.prediction(input: NAM14Input(imageAt: url))
+
                 let res = result?.classLabel ?? ""
                 if !full.contains(res) {
                     debugPrint("full=\(full),res=\(res)")
@@ -44,8 +44,7 @@ class ViewController: NSViewController {
                 }
             }
         }
-        
-        debugPrint("done!")
+        debugPrint("done")
     }
     
 
