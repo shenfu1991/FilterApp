@@ -31,20 +31,21 @@ class ViewController: NSViewController {
         let def = FileManager.default
         for pa in def.subpaths(atPath: path) ?? [] {
             let full = path + "/" + pa
-            if full.contains(".png") {
-                let mmm = NAM15()
+            if full.contains(".jpeg") || full.contains(".png") {
+                let mmm = XQJ_0()
                 let url = URL(fileURLWithPath: full)
-                let result =  try? mmm.prediction(input: NAM15Input(imageAt: url))
+                let result =  try? mmm.prediction(input: XQJ_0Input(imageAt: url))
 
                 let res = result?.classLabel ?? ""
                 if !full.contains(res) {
-                    debugPrint("full=\(full),res=\(res)")
+                    debugPrint("del=\(full),res=\(res)")
                     let url = URL(fileURLWithPath: full)
                     try? def.removeItem(at: url)
                 }
             }
         }
         debugPrint("done")
+        exit(0)
     }
     
 
